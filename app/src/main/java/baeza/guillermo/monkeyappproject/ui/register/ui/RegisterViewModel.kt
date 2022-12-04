@@ -57,7 +57,7 @@ class RegisterViewModel: ViewModel() {
 
     private fun isValidEmail(email: String): Boolean = Patterns.EMAIL_ADDRESS.matcher(email).matches()
 
-    private fun isValidUser(user: String): Boolean = user.length > 1
+    private fun isValidUser(user: String): Boolean = user.isNotEmpty()
 
-    private fun isValidPassword(password: String): Boolean = password.length > 1
+    private fun isValidPassword(password: String): Boolean = password.isNotEmpty()
 }

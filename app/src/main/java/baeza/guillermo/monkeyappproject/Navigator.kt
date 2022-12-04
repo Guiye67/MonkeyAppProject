@@ -20,7 +20,7 @@ fun CustomNavigator() {
     val main = HomeViewModel()
     val movieList by main.movies.observeAsState()
 
-    NavHost(navController = navigationController, startDestination = Routes.Home.route) {
+    NavHost(navController = navigationController, startDestination = Routes.Login.route) {
         composable(route = Routes.Login.route) {
             Login(navigationController = navigationController, scaffoldState)
         }
